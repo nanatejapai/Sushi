@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="stylesheet4.css" rel="stylesheet" media="screen" type="text/css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/*.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}*/
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+  <h2>Sidenav Push Example</h2>
+  <p>Click on the element below to open the side navigation menu, and push this content to the right.sfjlsjfksjdfksdkfjsdlkfjskldfjsldkfjlskdfjklsjflkjslafjskajk'jilJSIR'Ojsoigj
+  jsflfjg;djgkljfdskgjskdl;fjgs;kjgk;jgklgjkfs;dgjsd;jgkf;dsgjk;lsdjg</p>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  <div class='grid'>
+    <div class="color-shape maki rice seaweed crab avocado sesame">
+  <a href="sushi/cali.html"><img src="img/cali.png"></a></div>
+
+  <div class="color-shape maki rice seaweed fish cucumber cream">
+  <a href="sushi/philly.html"><img src="img/philade.png"></a></div>
+
+  <div class="color-shape maki rice seaweed crab cucumber mango"><a href="sushi/mango.html"><img src="img/calimango.png"></a></div>
+
+  <div class="color-shape maki rice seaweed beef shrimp avocado cream sesame">
+  <a href="sushi/carne.html"><img src="img/carne.png"></a></div>
+
+  <div class="color-shape maki rice seaweed beef chicken shrimp bacon avocado cream cheese">
+  <a href="sushi/carne.html"><img src="img/gratinado.png"></div>
+
+  <div class="color-shape maki rice seaweed haggis">
+  <a href="sushi/haggis.html"><img src="img/haggis.png"></a></div>
+
+  <div class="color-shape maki rice seaweed arugula tomato cream">
+  <a href="sushi/tomato.html"><img src="img/tomato.png"></a></div>
+
+  <div class="color-shape maki rice seaweed pork cucumber">
+  <a href="sushi/porksung.html"><img src="img/taiwan.png"></a></div>
+
+  <div class="color-shape nigiri rice seaweed crab">
+   <a href="sushi/crab.html"><img src="img/crab.png"></a></div>
+
+  <div class="color-shape nigiri rice seaweed foiegras">
+    <a href="sushi/foiegras.html"><img src="img/foiegras.png"></a></div>
+
+  <div class="color-shape temaki rice seaweed chicken"><img src="img/chicken.png"></div>
+
+  <div class="color-shape burrito rice seaweed fish crab avocado lettuce sauce">
+    <a href="sushi/burrito.html"><img src="img/sushiburrito.png"></a></div>
+
+  <div class="color-shape burger rice seaweed fish lettuce sauce sesame"><img src="img/burger.png"></div>
+
+  <div class="color-shape block rice seaweed crab green">
+    <a href="sushi/pan.html"><img src="img/bake.png"></a></div>
+
+  <div class="color-shape pizza rice seaweed fish onion green sauce"><a href="sushi/pizza.html"><img src="img/pizza.png"></a></div>
+
+  <div class="color-shape donut rice seaweed fish cucumber radish tobiko sesame">
+    <a href="sushi/donut.html"><img src="img/donut.png"></a></div>
+
+  <div class="color-shape bread seaweed fish ginger">
+    <a href="sushi/croissant.html"><img src="img/bread.png"></a></div>
+
+  <div class="color-shape maki rice seaweed fish crab avocados green"><img src="img/rainbow-roll.png"></div>
+
+  <div class="color-shape maki rice paper avocado cream"><img src="img/spring.png"></div>
+
+  <div class="color-shape maki rice seaweed duck sweet curds gravy">
+    <a href="sushi/poutine.html"><img src="img/poutine.png"></a></div>
+
+  <div class="color-shape maki rice seaweed fish tobiko sesame green"><img src="img/taco.png"></div>
+  <div class="color-shape burger rice seaweed smoked avocado zucchini sauce"><img src="img/mos.png"></div>
+
+  <div class="color-shape maki rice ant">
+    <a href="sushi/ant.html"><img src="img/ant.png"></a></div>
+  <div class="color-shape maki potato kale pickles sausage"><img src="img/dutch.png"></div>
+
+  <div class="color-shape maki rice tofu nuts raisin">
+    <a href="sushi/fruit.html"><img src="img/fruit.png"></a></div>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="script/isotope.pkgd.min.js"></script>
+<script>
+  
+  $( document ).ready(function() {
+  var $grid = $('.grid').isotope({
+  itemSelector: '.color-shape'
+});
+
+// store filter for each group
+var filters = {};
+
+$('.filters').on( 'click', '.button', function( event ) {
+  var $button = $( event.currentTarget );
+  // get group key
+  var $buttonGroup = $button.parents('.button-group');
+  var filterGroup = $buttonGroup.attr('data-filter-group');
+  // set filter for group
+  filters[ filterGroup ] = $button.attr('data-filter');
+  // combine filters
+  var filterValue = concatValues( filters );
+  // set filter for Isotope
+  $grid.isotope({ filter: filterValue });
+});
+
+// change is-checked class on buttons
+// $('.button-group').each( function( i, buttonGroup ) {
+//   var $buttonGroup = $( buttonGroup );
+//   $buttonGroup.on( 'click', 'button', function( event ) {
+//     $buttonGroup.find('.is-checked').removeClass('is-checked');
+//     var $button = $( event.currentTarget );
+//     $button.addClass('is-checked');
+//   });
+// });
+  
+// flatten object by concatting values
+function concatValues( obj ) {
+  var value = '';
+  for ( var prop in obj ) {
+    value += obj[ prop ];
+  }
+  return value;
+}
+
+});
+
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 

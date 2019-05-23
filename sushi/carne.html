@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi</title>
+    <link href="css/reset.css" rel="stylesheet" media="screen" type="text/css">
+    <link href="../stylesheet3.css" rel="stylesheet" media="screen" type="text/css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="../js/jquery.min.js"><\/script>')</script>
+        <script src="../external/jquery/jquery.js"></script>
+    <script src="../jquery-ui.min.js"></script>
+     <script src="../jquery.marquee.min.js"></script>
+     <script src="../jquery.pause.js"></script>
+  </head>
+  <body>
+
+<div class="header">
+    <h3 class="filter"><a href="../sushi3.html">Filter</a></h3>
+<div class="title">
+<div class='marquee'><h3>sushi sushi sushi sushi sushi sushi sushi sushi sushi sushi sushi sushi </h3></div>
+</div>
+</div>
+<br>
+<br>
+
+<div class="container3">
+  <div class="container">
+  <div class="fact"><img src="../rice.gif"></div>
+  <div class="overlay">
+    <div class="text"><h3>SUSHI</h3>
+Sushi comes from a Japanese word meaning "sour rice," and it's the rice that's at the heart of sushi
+<br>
+<br>
+<br></div>
+  </div>
+</div>
+</div>
+<div class="content">
+  <div class="sushi"> <img src="../img/carne.png"></div>
+</div>
+
+<div class="container">
+  <div class="fact"><img src="fact/carneasada.jpg"></div>
+  <div class="overlay">
+    <div class="text">Carne Asada</div>
+  </div>
+</div>
+
+<div class="footer">
+    <h3 class="name">Mar y tierra roll</h3>
+    <h3 class="place">Mexico</h3>
+    <div class="form"><img src='../form/maki.png' height='50'></div>
+    <div class="tag">
+       <button class="button" data-filter=".rice">rice</button>
+       <button class="button" data-filter=".seaweed">seaweed</button>
+       <button class="button" data-filter=".beef">beef</button>
+       <button class="button" data-filter=".shrimp">shrimp</button>
+       <button class="button" data-filter=".avocado">avocado</button>
+       <button class="button" data-filter=".cream">cream cheese</button>
+  </div>
+</div>
+<script>
+  $(function () {
+    $('.marquee').marquee({
+        duration: 24000,
+         duplicated: true,
+         gap: 40, 
+         direction: 'left',
+         pauseOnHover: true
+    });
+
+    });
+
+  $( function() {
+    $( ".container" ).draggable();
+  } );
+
+$( function() {
+    $( ".container2" ).draggable();
+  } );
+
+   $( function() {
+    $( ".video" ).draggable();
+  } );
+
+  $( function() {
+    $( ".container" ).draggable();
+  } );
+
+$( function() {
+    $( ".container2" ).draggable();
+  } );
+
+   $( function() {
+    $( ".video" ).draggable();
+  } );
+  </script>
+  </body>
+</html>

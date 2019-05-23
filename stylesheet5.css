@@ -1,0 +1,377 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/*---sushi---*/
+span{
+  font-size: 10px;
+}
+.sushi {
+  position: absolute;
+  left: 35%;
+  top: 20%;
+}
+
+.sushi img{
+  width: 400px;
+}
+
+/*---fact---*/
+
+.container2 {
+  position: absolute;
+  left: 75%;
+  top: 20%;
+}
+
+.container {
+  position: absolute;
+  left: 7%;
+  top: 50%;
+  width: 50%;
+  border: 1.5px solid black;
+  width: 250px;
+}
+
+.fact img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/*---video---*/
+.video {
+  position: absolute;
+  right: 7%;
+  top: 50%;
+  border: 1.5px solid black;
+}
+/*---footer---*/
+.footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   display: grid;
+   height: 60px;
+   background-color: white;
+   grid-template-columns: 1fr 0.7fr 0.3fr 2fr;
+}
+
+.footer{
+  border-top: 1.5px solid black;
+  width: 100%;
+}
+.name{
+  left: 50%;
+  top: 50%;
+  border-right: 1.5px solid black;
+  padding: 0.5em;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.place{
+  left: 50%;
+  top: 50%;
+  border-right: 1.5px solid black;
+  padding: 0.5em;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.form{
+  left: 50%;
+  top: 50%;
+  border-right: 1.5px solid black;
+  padding: 0.5em;
+  color: #d9480f;
+  text-align: center;
+  vertical-align: middle;
+/*  margin: 0;*/
+}
+.tag{
+  left: 50%;
+  top: 50%;
+  padding: 0.5em;
+  color: #d9480f;
+  align-items: center;
+  vertical-align: middle;
+}
+
+h3{
+  font-size: 24px;
+  font-weight: normal;
+}
+/*---Header---*/
+a {
+  color: black;
+  background-color: transparent; 
+  text-decoration: none;
+}
+.header{
+   position: fixed;
+   z-index: 10;
+   left: 0;
+   top: 0;
+   display: grid;
+   height: 50px;
+   background-color: white;
+   grid-template-columns: 1fr 6fr;
+}
+
+.header{
+  border-bottom: 1.5px solid black;
+  width: 100%;
+}
+
+.title{
+  left: 50%;
+  top: 60%;
+  height: 60px;
+  border-right: 1.5px solid black;
+  padding: 0.5em;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.filter{
+  left: 50%;
+  top: 50%;
+  padding: 0.5em;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+}
+
+/* ---- button ---- */
+h3{
+  text-transform: uppercase;
+}
+.filters {
+  position: relative;
+  display: block;
+  display: grid;
+  margin: 0;
+  z-index: 1;
+
+  position: fixed;
+
+  z-index: 1;
+/*  grid-gap: 10px;*/
+}
+
+.group4 {
+  grid-column: 1/2;
+}
+.button {
+  display: inline-block;
+  padding: 0.5em 0.7em;
+  background: white;
+  border: solid white 1.5px;
+  font-family: sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+/*  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);*/
+/*  color: #222;*/
+}
+
+.button:active,
+.button.is-checked {
+  background-color: black;
+}
+
+.button.is-checked {
+  color: white;
+/*  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);*/
+}
+
+.button:active {
+  /*box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);*/
+}
+
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+
+/* ---- isotope ---- */
+
+.grid {
+  display: block;
+  transition: margin-left .5s;
+  padding: 16px;
+  max-width: 100%;
+
+
+}
+
+/* clear fix */
+.grid:after {
+  display: block;
+  clear: both;
+}
+
+/*image-hover*/
+
+.grid img{
+  width: 100px;
+   -webkit-transition: -webkit-transform .3s ease-in-out;
+          transition:         transform .3s ease-in-out;
+}
+
+.grid img:hover {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+/* ui group */
+
+.ui-group:not(:first-child) {
+  width: 100%;
+  display: inline-block;
+  background-color: white;
+  border-right: 1.5px black solid;
+  border-bottom: 1.5px black solid;
+  padding-left: 20px; 
+}
+.ui-group:not(:first-child):hover{
+  width: 100%;
+  background-color: white;
+}
+
+.ui-group:first-child{
+  width: 100%;
+  display: inline-block;
+  background-color: white;
+  border-bottom: 1.5px black solid;
+  padding-left: 20px;
+  border-right: 1.5px black solid;
+}
+
+.ui-group:last-child{
+  width: 100%;
+  display: inline-block;
+  background-color: white;
+  border-bottom: 1.5px black solid;
+  padding-left: 20px; 
+}
+.ui-group h3 {
+  display: inline-block;
+  margin-right: 0.2em;
+  font-size: 12px;
+}
+
+.ui-group .button-group {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* color-shape */
+
+.color-shape {
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  float: left;
+}
+
+/*---- form ----*/
+.forms {
+  grid-column: 1/5;
+  display: block;
+}
+.forms .button:not(:first-child){
+  border: solid black 0px;
+}
+.forms .button:active,
+.forms .button.is-checked:not(:first-child) {
+  background-color: white;
+  border: solid black 0px;
+}
+
+.forms .button.is-checked {
+  color: white;  
+  border: solid black 1.5px;
+}
+.forms img{
+  height: 60px;
+  float: left;
+
+}
+
+
+@font-face {
+  font-family: 'GTAmerica';
+  font-weight: normal;
+  font-style: normal;
+  src: url('gt_america_regular-webfont.woff2') format('woff2'),
+    url('gt_america_regular-webfont') format('woff');
+}
+/*.color-shape.round {
+  border-radius: 35px;
+}
+ 
+.color-shape.big.round {
+  border-radius: 75px;
+}
+ 
+.color-shape.red { background: red; }
+.color-shape.blue { background: blue; }
+.color-shape.yellow { background: yellow; }
+ 
+.color-shape.wide, .color-shape.big { width: 150px; }
+.color-shape.tall, .color-shape.big { height: 150px; }*/
